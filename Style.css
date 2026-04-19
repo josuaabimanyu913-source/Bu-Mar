@@ -1,0 +1,766 @@
+/* ===============================
+   ROOT VARIABLES (BRAND CONTROL)
+================================= */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --dark: #0f172a;
+  --gray: #64748b;
+  --light: #f8fafc;
+  --white: #ffffff;
+
+  --radius: 14px;
+  --transition: all 0.3s ease;
+}
+
+/* ===============================
+   RESET & GLOBAL
+================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--dark);
+  line-height: 1.7;
+  background-size: contain;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===============================
+   NAVBAR
+================================= */
+.navbar {
+  position: sticky;
+  top: 15px;
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 20px;
+
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.7);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+/* LOGO */
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* RIGHT SIDE */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ICON BUTTON */
+.icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon-btn:hover {
+  transform: scale(1.08);
+  background: #eaeaea;
+}
+
+.icon-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: #333;
+}
+
+/* BADGE */
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 50%;
+}
+
+/* CTA UTAMA */
+.cta-main {
+  background: #c71a14;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.cta-main:hover {
+  transform: scale(1.05);
+}
+
+/* HAMBURGER */
+.hamburger {
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.hamburger span {
+  width: 18px;
+  height: 2px;
+  background: #333;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* ANIMASI */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-6px);
+}
+
+
+/* ===============================
+   HERO SECTION
+================================= */
+.hero {
+  padding: 90px 10%;
+  display: grid;
+  text-align: center;
+  gap: 50px;
+}
+
+.btn{
+ display: flex;
+ text-align: center;
+ margin-top: 0vh;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 0vh;
+  color: #502909;
+  font-weight: bold;
+}
+
+.hero p {
+  color: var(--light);
+  margin-bottom: 35px;
+  font-size: 1.05rem;
+}
+
+.hero img {
+  border-radius: var(--radius);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* ===============================
+   BUTTON
+================================= */
+.btn {
+  align-items: center;
+  padding: 14px 34px;
+  background: var(--gray);
+  color: var(--white);
+  font-weight: 60;
+  border-radius: 999px;
+  transition: var(--transition);
+  display: inline-flex;
+  
+}
+
+.btn2 {
+  align-items: center;
+  padding: 14px 34px;
+  font-weight: 60;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid red;
+  color: red;
+  font-size: 0.9rem;  
+  transition: var(--transition);
+}
+
+.btn2:hover {
+  background: red;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+
+.btn:hover {
+  background: var(--dark);
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   SECTION GLOBAL
+================================= */
+section {
+  padding: 80px 10%;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* ===============================
+   FEATURES
+================================= */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+  padding: 0%;
+}
+
+.h2{
+  color: rgb(221, 191, 151);
+}
+
+.card {
+  background: var(--white);
+  padding: 35px;
+  border-radius: var(--radius);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+}
+
+.card p {
+  color: var(--gray);
+}
+
+/* ===============================
+   CTA SECTION
+================================= */
+.cta-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.cta-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  background-color: #a17878;
+  color: white;
+  padding: 10px 18px;
+  border: none; /* tanpa border */
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.cta-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.cta-btn:hover {
+  background-color: #3a3333;
+  transform: scale(1.05);
+}
+/* ===============================
+   FOOTER
+================================= */
+footer {
+  padding: 35px 10%;
+  text-align: center;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .cta {
+    margin: 0 5%;
+  }
+}
+
+/* ===============================
+   PRODUCT SECTION
+================================= */
+#products {
+  background: rgb(165, 151, 126);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5em;
+  justify-content: start; /* ⬅️ mulai dari kiri */
+  height: 80%;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.product-card {
+  background: var(--white);
+  border-radius: 1em;
+  padding: 1.2em;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  transition: var(--transition);
+  text-align: center;
+  max-width: 260px;
+  margin: 0; /* ⬅️ INI KUNCI */
+  width: 100%;
+  font-size: 1rem;
+  height: fit-content;
+}
+
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-card h3 {
+  font-size: 1.1em;
+  margin-bottom: 0%;
+}
+
+.product-card .price {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.product-card .desc {
+  font-size: 0.9em;
+  color: var(--gray);
+  margin-bottom: 14px;
+}
+
+.product-actions {
+  margin-top: 12px;
+}
+
+.product-actions button {
+  flex: 1;
+  padding: 0.6em;
+  font-size: 0.9em;
+  border-radius: 2em;
+  font-size: 14px;
+}
+
+.btn-outline,
+.btn-small {
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  background: transparent;
+  border: 1px solid red;
+  color: red;
+  padding: 10px 24px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .product-actions{
+    flex-direction: column;
+  }
+}
+
+@media screen {.product-actions
+  {
+    display: flex;
+    width: fit-content;
+}
+  
+}
+  
+
+
+/* ===============================
+   PRODUCT IMAGE – ROUNDED & SHADOW
+================================= */
+.product-card img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1.3;
+  height: 65%;       /* DARI 150px → 120px */
+  object-fit: cover;
+  border-radius: 0.8em;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+
+/* Efek hover biar makin "hidup" */
+.product-card:hover img {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.product-card {
+  width: 100%;
+}
+
+
+
+.price {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.product-card .desc {
+  font-size: 0.95rem;
+  color: var(--gray);
+}
+
+/* ===============================
+   PRODUCT ACTION BUTTONS
+================================= */
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  gap: 12px
+}
+
+
+
+.btn-outline {
+  padding: 5px 18px;
+  border: 2px solid;
+  background: transparent;
+  color:#c71a14;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+
+}
+
+.btn-outline:hover {
+  background: red;
+  color: #fff;
+}
+
+/* ===============================
+   SIDE MENU (MOBILE)
+================================ */
+.side-menu {
+  position: absolute;
+  top: 9vh;
+  right: 0;
+  width: 180px;
+  background: white;
+  border-radius: 12px;
+  padding: 10px 27px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: 0.2s;
+  text-decoration: none;
+  color: #fc0000;
+  font-size: 16px;
+  
+}
+
+.side-menu.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.side-menu a:hover {
+  background: #f5f5f5;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-6px);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: #3333334b;
+  display: none;
+  z-index: 150;
+  border-radius: 20px;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.menu-wrapper {
+  position: relative;
+}
+
+
+/* ===============================
+   NAVBAR RESPONSIVE FIX
+================================ */
+
+/* Desktop */
+.hamburger {
+  display: flex;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  nav a {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    
+  }
+}
+
+.cart-btn {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* ===============================
+   CART PANEL
+================================ */
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -10px 0 30px rgba(0,0,0,0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1002;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-panel.active {
+  transform: translateX(0);
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-header button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cart-items {
+  flex: 1;
+  padding: 18px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  margin-bottom: 14px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.cart-item h4 {
+  font-size: 0.95rem;
+}
+
+.cart-item span {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.cart-footer {
+  padding: 18px;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 12px;
+}
+
+.cart-panel {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.cart-summary small {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.cart-summary h4 {
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.cart-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-actions button {
+  flex: 1;
+}
+
+/* overlay khusus cart */
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 1001;
+  display: none;
+}
+
+.cart-overlay.active {
+  display: block;
+}
+
+.cart-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.cart-info h4 {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.remove-item {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.qty-control button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.qty-control .qty {
+  min-width: 24px;
+  text-align: center;
+  font-weight: 600;
+}
