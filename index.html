@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dapur Bu Mar</title>
+
+  <!-- CSS External -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- SIDE MENU -->
+    <aside class="side-menu" id="sideMenu">
+      <ul>
+        <li><a href="#" data-name="Dapur Bu Mar" data-phone="62895385832026"
+            data-message="Halo, saya tertarik bermitra dengan Bu Mar" class="WhatsApp-link">
+            Tertarik Bermitra
+          </a>
+        </li>
+        <li><a href="#products">Produk</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </aside>
+
+    <!-- LOGO -->
+    <div class="logo">Dapur Bu Mar</div>
+
+    <!-- ACTIONS -->
+    <div class="nav-actions">
+
+      <a href="https://wa.me/6289506446845" class="cta-main" target="_blank">
+        Pesan
+      </a>
+
+      <button class="icon-btn cart-btn" id="cartBtn">
+        <svg viewBox="0 0 24 24" width="22" height="22">
+          <path
+            d="M7 4h-2l-1 2v2h2l3.6 7.59-1.35 2.44c-.16.28-.25.61-.25.97 0 1.1.9 2 2 2h10v-2h-9.42c-.14 0-.25-.11-.25-.25l.03-.12L11.1 17h6.45c.75 0 1.41-.41 1.75-1.03L22 9V7H6.21l-.94-2z" />
+        </svg>
+        <span class="cart-badge" id="cartCount">0</span>
+      </button>
+
+      <!-- WRAPPER -->
+      <div class="menu-wrapper">
+
+        <button class="icon-btn hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="side-menu" id="sideMenu">
+          <a href="#features">Fitur</a>
+          <a href="#products">Produk</a>
+          <a href="#contact">Kontak</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h2>Selamat Datang di Website Dapur Bu Mar</h2>
+      <p>Usaha Toko Kue dan Kripik.</p>
+      <a href="#products" class="btn">Lihat Produk</a>
+      <a href="#footer" class="btn">Mulai Sekarang</a>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <h2>Mengapa Harus Membeli Produk Kami?</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Pengiriman</h3>
+        <p>Ongkir ditanggung Pembeli, paling lambat .</p>
+      </div>
+      <div class="card">
+        <h3>Mekanisme Pemesanan</h3>
+        <p>Untuk saat ini hanya menerima pemesanan secara Pre-order.</p>
+      </div>
+      <div class="card">
+        <h3></h3>
+        <p>Siap diintegrasikan dengan sistem lain.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT SECTION -->
+  <section class="produk-kartu-besaran" id="products">
+    <h2>Produk Kami</h2>
+
+    <div class="product-grid">
+
+      <!-- STIK KEJU -->
+      <div class="product-card" data-name="Cheese Stick" data-price="25000">
+        <img src="Cheeze Stick.jpg" alt="Cheese Stick">
+        <h3>Cheese Stick</h3>
+        <p class="price">Rp 25.000</p>
+        <p class="desc">Cheese Stick 250gr.</p>
+
+        <div class="product-actions">
+          <button class="btn-outline add-to-cart">🛒 Keranjang</button>
+          <button class="btn small buy-now" href="https://wa.me/62895402914874">Beli Sekarang</button>
+        </div>
+      </div>
+
+      <!-- KRIPIK UBI UNGU -->
+      <div class="product-card" data-name="Kripik Ubi Ungu" data-price="25000">
+        <img src="Kripik Ubi Ungu.jpg" alt="Kripik Ubi Ungu">
+        <h3>Kripik Ubi Ungu</h3>
+        <p class="price">Rp 25.000</p>
+        <p class="desc">Kripik Ubi Ungu 250gr.</p>
+
+        <div class="product-actions">
+          <button class="btn-outline add-to-cart">🛒 Keranjang</button>
+          <button class="btn small buy-now" href="https://wa.me/62895402914874">Beli Sekarang</button>
+        </div>
+      </div>
+
+      <!-- BASRENG PEDAS DAUN JERUK -->
+      <div class="product-card" data-name="Basreng Pedas Daun Jeruk" data-price="25000">
+        <img src="Basreng Pedas Daun Jeruk.jpg" alt="Basreng Pedas Daun Jeruk">
+        <h3>Basreng Pedas Daun Jeruk</h3>
+        <p class="price">Rp 25.000</p>
+        <p class="desc">Basreng Pedas Daun Jeruk 250gr.</p>
+
+        <div class="product-actions">
+          <button class="btn-outline add-to-cart">🛒 Keranjang</button>
+          <button class="btn small buy-now" href="https://wa.me/62895402914874">Beli Sekarang</button>
+        </div>
+      </div>
+
+      <!-- BASRENG ORI DAUN JERUK -->
+      <div class="product-card" data-name="Basreng Ori Daun Jeruk" data-price="25000">
+        <img src="Basreng Ori Daun Jeruk.jpg" alt="Basreng Ori Daun Jeruk">
+        <h3>Basreng Ori Daun Jeruk</h3>
+        <p class="price">Rp 25.000</p>
+        <p class="desc">Basreng Ori Daun Jeruk 250gr.</p>
+
+        <div class="product-actions">
+          <button class="btn-outline add-to-cart">🛒 Keranjang</button>
+          <button class="btn small buy-now" href="https://wa.me/62895402914874">Beli Sekarang</button>
+        </div>
+      </div>
+
+      <!-- KUE KETAWA -->
+      <div class="product-card" data-name="Kue Ketawa" data-price="25000">
+        <img src="Kue Ketawa.jpg" alt="Kue Ketawa">
+        <h3>Kue Ketawa</h3>
+        <p class="price">Rp 25.000</p>
+        <p class="desc">Kue ketawa 250gr.</p>
+
+        <div class="product-actions">
+          <button class="btn-outline add-to-cart">🛒 Keranjang</button>
+          <button class="btn small buy-now" href="https://wa.me/62895402914874">Beli Sekarang</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <div class="cta-container">
+    <a href="https://wa.me/6289506446845" target="_blank" class="cta-btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WA">
+      WhatsApp
+    </a>
+
+    <a href="https://instagram.com/dapurbumar" target="_blank" class="cta-btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="IG">
+      Instagram
+    </a>
+
+    <a href="#donasi" class="cta-btn">Dukung Kami</a>
+
+    <a href="index2-about.html" class="cta-btn">About Us</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    © 2021 Dapur Bu Mar. All rights reserved.
+  </footer>
+
+  <!-- CART PANEL -->
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h3>Keranjang</h3>
+      <button id="closeCart">✕</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <!-- item masuk lewat JS -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-summary">
+        <div>
+          <small>Subtotal Dipilih</small>
+          <h4 id="subtotalSelected">Rp 0</h4>
+        </div>
+
+        <div>
+          <small>Total Semua</small>
+          <h4 id="subtotalAll">Rp 0</h4>
+        </div>
+      </div>
+
+      <div class="cart-actions">
+        <button class="btn" id="checkoutBtn">
+          Checkout Dipilih
+        </button>
+
+        <button class="btn2" id="checkoutAll">
+          Checkout Semua
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+<script src="data.js"></script>
+
+</html>
